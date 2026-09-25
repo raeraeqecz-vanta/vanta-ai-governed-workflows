@@ -1,0 +1,13 @@
+interface:
+  display_name: เลือก Skill ถัดไป / Choose Next Skill
+  short_description: แนะนำ Skill ที่เหมาะสมจากบริบทและสถานะงาน
+  default_prompt: ใช้ @choose-next-skill เพื่อเลือก Skill ที่ควรดำเนินการต่อ
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
