@@ -1,0 +1,17 @@
+interface:
+  display_name: to spec
+  short_description: เปลี่ยนบทสนทนา แนวคิด ข้อกำหนด และบริบทโครงการที่กำลังพัฒนาให้เป็น
+    specification/contract ที่มี governance ชัดเจน พร้อม scope, authority, state,
+    version, compatibility, verification, freeze, handoff และ Next Action. Turn evolving
+    conversations, ideas, requirements, and project context into governed specifications/contracts
+    with explicit scope, authority, state, versioning, compatibility, verification,
+    freeze, handoff, and Next Action.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
