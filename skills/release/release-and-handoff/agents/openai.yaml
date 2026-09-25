@@ -1,0 +1,13 @@
+interface:
+  display_name: ปล่อยงานและส่งมอบ / Release and Handoff
+  short_description: Deploy Publish Package หรือส่งมอบตามบริบท
+  default_prompt: ใช้ @release-and-handoff เพื่อปล่อยงานหรือส่งมอบ Version ที่ผ่านการอนุมัติ
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
