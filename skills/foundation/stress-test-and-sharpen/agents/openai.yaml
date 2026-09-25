@@ -1,0 +1,13 @@
+interface:
+  display_name: ทดสอบแรงกดดันและลับคม / Stress Test and Sharpen
+  short_description: ตรวจจับจุดอ่อนและอุดรอยรั่วของแนวคิดหรือระบบ
+  default_prompt: ใช้ @stress-test-and-sharpen เพื่อตรวจจับจุดอ่อนและลับคมแนวคิดนี้
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
