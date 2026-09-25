@@ -1,0 +1,13 @@
+interface:
+  display_name: ตรวจโค้ดและแก้ไข / Code Review and Fix
+  short_description: ตรวจ Diff ล่าบั๊ก และแก้ไขเฉพาะ Scope
+  default_prompt: ใช้ @code-review-and-fix เพื่อตรวจสอบและแก้ไขโค้ดตามหลักฐาน
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
