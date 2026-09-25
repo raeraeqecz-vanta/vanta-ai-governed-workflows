@@ -1,0 +1,14 @@
+interface:
+  display_name: ตั้งค่าบริบท Skill / Set Up Skill Context
+  short_description: ตั้งค่า Context และเอกสารกลางของโปรเจกต์
+  default_prompt: ใช้ @setup-skill-context เพื่อตรวจและตั้งค่าบริบทสำหรับชุด Skill
+    ในโปรเจกต์นี้
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
