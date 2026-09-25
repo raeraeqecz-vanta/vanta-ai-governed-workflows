@@ -1,0 +1,13 @@
+interface:
+  display_name: แปลงพิมพ์เขียวเป็นตั๋วงาน / Blueprint to Tasks
+  short_description: สับ Blueprint เป็น Directory Tree และ Atomic Tasks
+  default_prompt: ใช้ @blueprint-to-tasks เพื่อแปลง Blueprint เป็นตั๋วงานพร้อมพัฒนา
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
