@@ -1,0 +1,13 @@
+interface:
+  display_name: ลงมือทำตั๋วงานที่อนุมัติแล้ว / Implement Approved Task
+  short_description: เขียนโค้ดเฉพาะ Ticket ที่ได้รับการอนุมัติ
+  default_prompt: ใช้ @implement-approved-task เพื่อดำเนินการ Ticket ที่อนุมัติแล้ว
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
