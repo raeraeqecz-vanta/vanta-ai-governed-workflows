@@ -1,0 +1,13 @@
+interface:
+  display_name: จัดทำคู่มือการใช้งาน / Write User Manual
+  short_description: สร้างคู่มือไทยที่สั้น ชัด และใช้งานได้จริง
+  default_prompt: ใช้ @write-user-manual เพื่อจัดทำคู่มือการใช้งานจากระบบที่ผ่านการตรวจแล้ว
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
