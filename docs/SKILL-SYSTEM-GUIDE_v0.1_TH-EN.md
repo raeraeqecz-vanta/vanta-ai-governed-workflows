@@ -1,6 +1,7 @@
-# Skill System Guide / คู่มือระบบ Skill
+# VANTA Skills — Skill System Guide / คู่มือระบบ Skill
 
-**System:** `thai-ai-governed-workflows`  
+**System:** `VANTA Skills`  
+**Repository:** `raeraeqecz-vanta/skills-th-en`  
 **Document:** Skill System Guide  
 **Version:** `v0.1`  
 **Status:** Proposed Baseline / Approved for implementation planning  
@@ -15,7 +16,9 @@ Define the shared standard for installing, invoking, discovering context and cap
 ## 2. Repository and Collection Model / โมเดล Repository และชุด Skill
 
 ```text
-Repository: thai-ai-governed-workflows
+Brand: VANTA
+Product: VANTA Skills
+Repository: raeraeqecz-vanta/skills-th-en
 Current collection: governed-project-delivery
 ```
 
@@ -160,19 +163,27 @@ Capability Adapter     = วิธีตรวจไฟล์ เครื่อ
 
 ## 10. Installation and Invocation / การติดตั้งและเรียกใช้
 
-ตัวอย่างติดตั้งทั้งชุด:
+ติดตั้งทั้งชุดแบบโต้ตอบ / Install the collection interactively:
 
 ```bash
-npx skills@latest add OWNER/thai-ai-governed-workflows -y -g
+npx skills add raeraeqecz-vanta/skills-th-en
 ```
 
-ตัวอย่างติดตั้งเฉพาะ Skill:
+ติดตั้งแบบ Global และข้ามคำถามยืนยัน / Global non-interactive install:
 
 ```bash
-npx skills@latest add OWNER/thai-ai-governed-workflows --skill=setup-skill-context
+npx skills add raeraeqecz-vanta/skills-th-en -g -y
+```
+
+ติดตั้งเฉพาะ Skill / Install one Skill:
+
+```bash
+npx skills add raeraeqecz-vanta/skills-th-en --skill setup-skill-context
 ```
 
 คำสั่งเรียกใช้ต้องอิงตามแพลตฟอร์มที่กำลังทำงานอยู่ และต้องไม่สรุปว่าความสามารถของ ChatGPT กับ Codex เหมือนกันทั้งหมด
+
+Invocation must follow the active platform. Do not assume ChatGPT and Codex expose identical capabilities.
 
 ## 11. Safety and Approval Gate / ความปลอดภัยและจุดรออนุมัติ
 
@@ -217,9 +228,8 @@ npx skills@latest add OWNER/thai-ai-governed-workflows --skill=setup-skill-conte
 
 ## 14. Next Action / ขั้นตอนถัดไป
 
-1. นำ Guide นี้ไปใช้เป็นมาตรฐานกลางของ Repository
-2. ปรับปรุง `setup-skill-context` ให้เป็น Foundation Skill
-3. เพิ่ม Context Contract ให้ Skill เดิมทุกตัว
-4. ตรวจและปรับชื่อ โครงสร้าง และเอกสารติดตั้งของแต่ละ Skill
-5. ทดสอบการส่งต่อระหว่าง ChatGPT และ Codex
-
+1. ใช้ Guide นี้เป็นมาตรฐานกลางของ `VANTA Skills`
+2. รักษา `setup-skill-context` เป็น Foundation Skill สำหรับการเริ่มบริบท
+3. รักษา Shared Context Contract ใน Skill ทุกตัว
+4. ตรวจชื่อ โครงสร้าง และเอกสารติดตั้งให้ตรงกับ `raeraeqecz-vanta/skills-th-en`
+5. ทดสอบการส่งต่อระหว่าง ChatGPT และ Codex ตามแพลตฟอร์มที่รองรับ
